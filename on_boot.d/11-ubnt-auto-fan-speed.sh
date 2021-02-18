@@ -8,7 +8,7 @@
 ##  1 = MANUAL  (Fan speed will explicitly be set at own set values)
 ##  2 = AUTO    (Controller will adjust PWM duty cycle depending on temperature)
 ##
-##  This script does not check for a HDD/SSD!
+##  This script does not check for a HDD/SSD, but you can adjust the HDD fan yourself.
 ##
 ##########
 
