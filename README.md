@@ -21,4 +21,4 @@ It stops the build in service that monitors the thermal values, fan speed and co
 * Adjust the settings if you want (or use mine)
 * Run the script: `sh /mnt/data/on_boot.d/11-ubnt-auto-fan-speed.sh`
 
-It will survive a reboot thanks to @boostchicken 's bootscript.
+It will survive a reboot thanks to @boostchicken 's bootscript. The OLED screen does show correct percentage and RPM. But it does not respond to changes anymore (the "slide" trick).
