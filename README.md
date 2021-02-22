@@ -1,5 +1,5 @@
 # ubnt-auto-fan-speed
-Automatic fan speed setting on UDM-PRO 1.8.5+ firmware to make it silenced.
+Automatic fan speed setting on UDM-PRO 1.8.6 (also confirmed working on 1.8.5) firmware to make it silenced. Not tested on newer beta firmware.
 
 
 
