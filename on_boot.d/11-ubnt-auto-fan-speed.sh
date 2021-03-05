@@ -12,10 +12,10 @@
 ##
 ##########
 
-#######################################################
-######### CONFIRMED WORKING ON FIRMWARE 1.8.5 #########
-## Kill Ubuiquiti monitoring/fan-speed process first ##
-#######################################################
+#######################################################################
+######### CONFIRMED ON FIRMWARE 1.8.5 / 1.8.6 AND 1.9.0 BETA ##########
+########## Kill Ubuiquiti monitoring/fan-speed process first ##########
+#######################################################################
 
 if pidof ubnt-fan-speed &>/dev/null; then
   INIT_SCRIPT_PID=`pidof S04ubnt-fan-speed`
