@@ -13,8 +13,8 @@
 ##########
 
 #######################################################################
-############ CONFIRMED ON FIRMWARE 1.8.5 / 1.8.6 / 1.9.0 ##############
-########## Kill Ubuiquiti monitoring/fan-speed process first ##########
+######## CONFIRMED ON FIRMWARE 1.8.5 / 1.8.6 / 1.9.0 / 1.9.1 ##########
+######### Kill Ubuiquiti monitoring/fan-speed process first ###########
 #######################################################################
 
 if pidof ubnt-fan-speed &>/dev/null; then
