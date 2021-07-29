@@ -10,7 +10,7 @@ If you apply inappropriate settings with this script, you will possibly (soft- o
 
 
 ## What it does
-It stops the build in service that monitors the thermal values, fan speed and connection of a HDD/SSD. After that it sets the thermal/fan chip (adt7475) to automatic mode. Once that is done it changes the thermal and fan values specified in the script. If you like, you can change the values to your own preferences.
+It stops the build in service that monitors the thermal values, fan speed and connection of a HDD/SSD. After that it sets the thermal/fan chip (adt7475) to automatic mode. Once that is done it changes the thermal and fan threshold values specified in the script. If you like, you can change the values to your own preferences.
 
 
 
