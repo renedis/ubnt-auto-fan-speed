@@ -4,7 +4,7 @@ USE THIS ON YOUR OWN RISK.
 If you apply inappropriate settings with this script, you will possibly (soft- or hard-) brick your equipment.
 
 
-# Firmware EA 2.x.x and for UDM Pro SE 3.0.18
+# Firmware EA 2.x.x and for UDM Pro SE 3.0.20
 
 ## Installation
 
