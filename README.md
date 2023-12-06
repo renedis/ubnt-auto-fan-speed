@@ -1,5 +1,5 @@
 # ubnt-auto-fan-speed
-Automatic fan speed setting on UDM-PRO (including SE) 1.12.38 release firmware to make it silenced. Also working on EA 2.5.16 and 3.0.20!
+Automatic fan speed setting on UDM-PRO (including SE) 1.12.38 release firmware to make it silenced. Also working on EA 2.5.16 and 3.2.xx!
 
 
 ## WARNING
