@@ -43,7 +43,7 @@ echo ${UBIOS_HDD_FAN_MODE} >/sys/class/hwmon/hwmon0/device/pwm1_enable
 UBIOS_CPU_MINIMAL_DUTY_FAN_PWM='60'        # default 128, this sets the minimal RPM for the CPU fan
 UBIOS_HDD_MINIMAL_DUTY_FAN_PWM='0'         # default 128, this sets the minimal RPM for the HDD fan
 UBIOS_CPU_MAXIMUM_DUTY_FAN_PWM='255'       # default 255, this sets the maximum RPM for the CPU fan
-UBIOS_HDD_MAXIMUM_DUTY_FAN_PWM='255'       # default 255, this sets the miximum RPM for the CPU fan
+UBIOS_HDD_MAXIMUM_DUTY_FAN_PWM='255'       # default 255, this sets the maximum RPM for the HDD fan
 
 echo ${UBIOS_CPU_MINIMAL_DUTY_FAN_PWM} >/sys/class/hwmon/hwmon0/device/pwm2_auto_point1_pwm
 echo ${UBIOS_HDD_MINIMAL_DUTY_FAN_PWM} >/sys/class/hwmon/hwmon0/device/pwm1_auto_point1_pwm
