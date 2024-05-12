@@ -46,7 +46,7 @@ elif [ $INSTALL_TYPE -eq 2 ]; then
     #
     echo "#######################################################"
     echo "# Installing ${GH_REPO}"
-    echo "#  for firmware v2.x.x, v3.x.x, v4.x.x"
+    echo "# for firmware v2.x.x, v3.x.x, v4.x.x"
     echo "#######################################################"
     # Install fancontrol if its not already done
     apt list fancontrol 2> /dev/null | grep "installed" && echo "fancontrol already installed" || (echo "Installing fancontrol" && apt install fancontrol -y)
