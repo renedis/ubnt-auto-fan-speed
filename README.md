@@ -1,5 +1,9 @@
 # ubnt-auto-fan-speed
 Automatic fan speed setting on UDM-PRO (including SE) 1.12.38 release firmware to make it silenced. Also working on 2.x.x, 3.x.x and 4.x.x!
+On firmware 4.x.x (not early access) Ubiquiti has changed the fan1/fan2/fan3/fan4 order.
+
+PWM1/TEMP3/FAN1 = Disk fan
+PWM2/TEMP1/FAN2 = CPU fan
 
 
 ## WARNING
