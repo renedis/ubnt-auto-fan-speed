@@ -27,10 +27,12 @@ This is a force to install script so will uninstall any previous version and ins
 ### Notes:
 
 * This is tested on a UDM-Pro with firmware 2.5.16 and UDM-Pro SE with firmware 3.0.18. Not tested on a UDM or UDR.
-* The UDM-Pro has 2 fans. A CPU fan (PWM1) and HDD fan (PWM2). The UDM-SE probably has an extra fan (not sure).
+* The UDM-Pro has 2 fans. A CPU fan (PWM2) and HDD fan (PWM1). The UDM-SE probably has an extra fan (not sure).
 * When "sensors" is used;
-- FAN1 = HDD-fan
-- FAN2 + FAN3 + FAN4 = CPU-fan
+
+- PWM1/TEMP3/FAN1 = Disk fan
+- PWM2/TEMP1/FAN2 = CPU fan
+
 
 
 Example sensors output:
@@ -38,17 +40,17 @@ Example sensors output:
 ```# sensors
 adt7475-i2c-4-2e
 Adapter: i2c-0-mux (chan_id 3)
-in1:          +0.89 V  (min =  +0.00 V, max =  +2.99 V)
-+3.3V:        +3.27 V  (min =  +2.96 V, max =  +3.63 V)
+in1:         891.00 mV (min =  +0.00 V, max =  +2.99 V)
++3.3V:         3.27 V  (min =  +2.96 V, max =  +3.63 V)
 fan1:           0 RPM  (min =    0 RPM)
-fan2:         814 RPM  (min =    0 RPM)
-fan3:         814 RPM  (min =    0 RPM)
-fan4:         814 RPM  (min =    0 RPM)
-temp1:        +38.0°C  (low  = -63.0°C, high = +191.0°C)
+fan2:         819 RPM  (min =    0 RPM)
+fan3:           0 RPM  (min =    0 RPM)
+fan4:           0 RPM  (min =    0 RPM)
+temp1:        +42.2°C  (low  = -63.0°C, high = +191.0°C)
                        (crit = +100.0°C, hyst = +96.0°C)
-Board Temp:   +35.0°C  (low  = -63.0°C, high = +191.0°C)
+Board Temp:   +39.5°C  (low  = -63.0°C, high = +191.0°C)
                        (crit = +100.0°C, hyst = +96.0°C)
-temp3:        +35.8°C  (low  = -63.0°C, high = +191.0°C)
+temp3:        +40.0°C  (low  = -63.0°C, high = +191.0°C)
                        (crit = +100.0°C, hyst = +96.0°C)
 ```
 
