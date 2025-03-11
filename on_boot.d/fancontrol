@@ -5,8 +5,11 @@ DEVNAME=hwmon0=adt7475
 FCTEMPS=hwmon0/device/pwm2=hwmon0/device/temp1_input hwmon0/device/pwm1=hwmon0/device/temp3_input
 FCFANS=hwmon0/device/pwm2=hwmon0/device/fan2_input hwmon0/device/pwm1=hwmon0/device/fan1_input
 MINTEMP=hwmon0/device/pwm2=40 hwmon0/device/pwm1=40
-MAXTEMP=hwmon0/device/pwm2=66 hwmon0/device/pwm1=66
-MINSTART=hwmon0/device/pwm2=60 hwmon0/device/pwm1=60
+MAXTEMP=hwmon0/device/pwm2=65 hwmon0/device/pwm1=65
+MINSTART=hwmon0/device/pwm2=60 hwmon0/device/pwm1=30
 MINSTOP=hwmon0/device/pwm2=60 hwmon0/device/pwm1=0
 MINPWM=hwmon0/device/pwm2=60 hwmon0/device/pwm1=0
 MAXPWM=hwmon0/device/pwm2=255 hwmon0/device/pwm1=255
+
+## PWM2 + temp1 = fan2 CPU fan
+## PWM1 + temp3 = fan1 Disk fan
