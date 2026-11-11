@@ -6,17 +6,18 @@ set -e
 
 # Get DataDir location
 DATA_DIR="/data"
-case "$(ubnt-device-info firmware || true)" in
+FIRMWARE_VERSION="$(ubnt-device-info firmware || true)"
+case "${FIRMWARE_VERSION}" in
 1*)
     DATA_DIR="/mnt/data"
     INSTALL_TYPE=1
     ;;
-2*|3*|4*|5*)
+2*|3*|4*|5*|6*)
     DATA_DIR="/data"
     INSTALL_TYPE=2
     ;;
 *)
-    echo "ERROR: No persistent storage found." 1>&2
+    echo "ERROR: Firmware version not recognized (${FIRMWARE_VERSION})." 1>&2
     INSTALL_TYPE=99
     exit 1
     ;;
@@ -42,12 +43,14 @@ if [ $INSTALL_TYPE -eq 1 ]; then
  
 elif [ $INSTALL_TYPE -eq 2 ]; then
     #
-    # Firmware v2.x.x, v3.x.x
+    # Firmware v2.x.x - v6.x.x
     #
     echo "#######################################################"
     echo "# Installing ${GH_REPO}"
-    echo "# for firmware v2.x.x, v3.x.x, v4.x.x, v5.x.x"
+    echo "# for firmware v2.x.x - v6.x.x"
     echo "#######################################################"
+    # Start with apt update as newer firmware sometimes ships with the apt cache cleared
+    apt update
     # Install fancontrol if its not already done
     apt list fancontrol 2> /dev/null | grep "installed" && echo "fancontrol already installed" || (echo "Installing fancontrol" && apt install fancontrol -y)
     # Grab the config fiie from the repo 
