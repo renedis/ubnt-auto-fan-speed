@@ -15,7 +15,7 @@ This is a force to install script so will uninstall any previous version and ins
 
 
 # Manual Installation
-## Firmware 2.x.x, 3.x.x and for UDM Pro (SE/Max) EA 4.x.x
+## Firmware 2.x.x and higher
 
 ### Installation
 
